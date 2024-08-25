@@ -1,0 +1,197 @@
+.gradient-background {
+    background: linear-gradient(300deg, #2e0466, black, #045e66);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 80%;
+  }
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+    background-color: #3a3a3b;
+}
+
+#container {
+    display: flex;
+    height: 15vh;
+    justify-content: left;
+    align-items: flex-end;;
+    background-color: #262626;
+    color: white;
+}
+
+.left-text {
+  display: inline-flex; 
+  float: left; 
+  width: 25%; 
+  color: #d4d5d6; 
+  padding-left: 10px; 
+  padding-right: 10px;
+}
+
+#top-maintext {
+  font-family: Aldabi;
+}
+
+#maintext {
+  font-family: Aldabi;
+}
+
+#xxx {
+  color: white; 
+  width: 50%; 
+  height: 100%; 
+  display: inline-block;
+}
+
+#comingsoon {
+  color: black; 
+  font-size: 5rem; 
+  font-family: Aldabi; 
+  margin-left: 40px;
+}
+
+#subtext {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ddi {
+  color: #d4d5d6;
+}
+
+#ddi:hover {
+  background-color: #d4d5d6;
+  color: black;
+}
+
+#carousel-container {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 25%;
+  height: 300px;
+  float: right;
+}
+
+#grid-item-1 {
+  text-align: center;
+  color: white;
+  background-color: #262626;
+  width: 75%;
+  margin-left: 12.5%;
+  border-radius: 15%;
+  height: max-content;
+}
+
+#bandits {
+  height: 100px;
+}
+
+#wilds-text {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+#footer-copyright {
+  color: white;
+}
+
+
+@media (max-width: 650px) {
+  .left-text { 
+    display: block;
+    width: 100%;  
+    text-align: center;
+  }
+
+  #xxx {
+    width: 100%;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 850px) {
+  #top-maintext {
+    font-size: 1.5rem;
+  }
+  #top-subtext {
+    font-size: 1rem;
+  }
+  .left-text {
+    margin-bottom: 20px;
+  }
+  .c-text-main {
+    font-size: 1.5rem;
+  }
+  .c-text-sub {
+    font-size: 1rem;
+  }
+  .crystal-subtext {
+    font-size: 0;
+  }
+  .but-text {
+    font-size: 1rem;
+  }
+  #comingsoon {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 750px) {
+  #top-maintext {
+    font-size: 1rem
+  }
+
+  #top-subtext {
+    font-size: .75rem;
+  }
+}
+
+/* @media (min-width: 651px) and (max-width: 900px) {
+  #footer-section {
+    margin-top: 100px;
+  }
+} */
+
+@media (max-width: 831px) {
+  #bandits {
+    height: 50px;
+  }
+}
+
+@media (max-width: 890px) {
+  #grid-container {
+    float: none;
+    grid-template-rows: max-content;
+    width: 50%;
+    height: max-content;
+    margin-left: 25%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  #grid-item-1 {
+    border-radius: 7.5%;
+  }
+
+  #wilds-text {
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
